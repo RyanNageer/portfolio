@@ -1,0 +1,35 @@
+header{
+    background: white;
+    padding: 0;
+    border-bottom: 1px solid #e72929
+}
+
+a{
+    color:#af1313
+}
+
+a:hover{ /* when you hover over something, in this case 'a', which is anything and everything */
+    background: #e72929;
+    color: white;
+}
+
+.container{ /*styling for the header*/ /* mentioned by name in header.component.html */
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}
+
+a.logo{
+    font-weight: bold;
+    padding: 1em; /* When you set padding: 1em;, you're telling the browser to apply a padding of 1em (the equivalent of the element’s font size) to all four sides (top, right, bottom, and left) of the element. */
+}
+
+nav ul{ /* targets all <ul> (unordered list) elements that are descendants of a <nav> (navigation) element */
+    list-style-type: none;
+    margin: 0;
+}
+
+nav ul li a { /* This targets all <a> (anchor/link) elements that are descendants of <li> (list item) elements, which are in turn descendants of <ul> elements inside a <nav> element */
+    padding: 1em;
+    display: inline-block;
+}

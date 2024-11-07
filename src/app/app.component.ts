@@ -11,5 +11,6 @@ import { HeaderComponent } from './header/header.component'; // Adjust path if n
 })
 export class AppComponent {
   title = 'portfolio';
+  imagePath: string = "images/wallpaper1.jpg";
 }
 
