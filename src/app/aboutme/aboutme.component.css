@@ -1,0 +1,19 @@
+.container {
+    display: flex; /* Makes items in the container align in a row */
+    align-items: center; /* Vertically aligns items to the center */
+    justify-content: space-evenly;
+    position: absolute; /*  position an element relative to its nearest positioned ancestor*/
+    left: 50%;
+    transform: translate(-50%, -50%); /* centers it */
+    gap: 20px; /* Adds 20px of space between each item in the container */
+    bottom: 450px;
+}
+
+
+.image {
+    border-radius: 50%; /* Makes the image circular */
+    width: 100px; /* Set a fixed width */
+    height: 100px; /* Set a fixed height to make it a circle */
+    object-fit: cover; /* Ensures the image is cropped to fit the circle */
+    margin-right: 20px; /* Adds 20px of space to the right of the image */
+}

@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './aboutme.component.css'
 })
 export class AboutmeComponent {
-
+  imagePath: string = "images/masterchief1.png"
+  headshot: string = "images/ryan.jpg"
 }
