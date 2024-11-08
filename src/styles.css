@@ -15,3 +15,16 @@ body{
 a{ /*All*/
     text-decoration: none
 }
+
+@font-face {
+    font-family: 'Conduit ITC Italic';  /* This is the name you will use to apply the font */
+    src: url('assets/fonts/ConduitITC-MedItal-Italic.ttf') format('truetype'); /* Pointing to the .ttf file */
+    font-weight: normal;
+    font-style: italic;  /* Since it's italic, you may want to define the font style */
+  }
+
+@font-face {
+    font-family: 'Conduit ITC';
+    src: url('assets/fonts/Conduit\ ITC\ Medium\ Regular.otf') format('opentype');
+}
+  

@@ -1,15 +1,21 @@
 header{
-    background: white;
+    background: transparent;
     padding: 0;
-    border-bottom: 1px solid #e72929
+    border-bottom: 1px solid transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the header is on top of other content */
 }
 
 a{
-    color:#af1313
+    color:white
 }
 
 a:hover{ /* when you hover over something, in this case 'a', which is anything and everything */
-    background: #e72929;
+    text-decoration: underline;
+    background: none; /* Ensures no background change */
     color: white;
 }
 
@@ -17,9 +23,11 @@ a:hover{ /* when you hover over something, in this case 'a', which is anything a
     margin: 0 auto;
     display: flex;
     justify-content:space-between;
+    font-family: 'Conduit ITC', Quicksand;
 }
 
-a.logo{
+a.home{
+    font-size: 21px;
     font-weight: bold;
     padding: 1em; /* When you set padding: 1em;, you're telling the browser to apply a padding of 1em (the equivalent of the element’s font size) to all four sides (top, right, bottom, and left) of the element. */
 }
@@ -32,4 +40,5 @@ nav ul{ /* targets all <ul> (unordered list) elements that are descendants of a 
 nav ul li a { /* This targets all <a> (anchor/link) elements that are descendants of <li> (list item) elements, which are in turn descendants of <ul> elements inside a <nav> element */
     padding: 1em;
     display: inline-block;
+    font-size: 20px
 }
