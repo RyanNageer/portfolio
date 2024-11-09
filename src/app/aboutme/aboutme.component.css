@@ -1,19 +1,25 @@
 .container {
-    display: flex; /* Makes items in the container align in a row */
-    align-items: center; /* Vertically aligns items to the center */
-    justify-content: space-evenly;
-    position: absolute; /*  position an element relative to its nearest positioned ancestor*/
-    left: 50%;
-    transform: translate(-50%, -50%); /* centers it */
-    gap: 20px; /* Adds 20px of space between each item in the container */
-    bottom: 450px;
+    background-color: lightpink;
+    margin-top: 20px; /* Adjust as needed to control space */
+}
+
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: #C0Afe2;
+    height: 100vh; /* Ensures full height for home component */
+    padding: 20px; /* Optional: Adds space around the content */
 }
 
 
 .image {
     border-radius: 50%; /* Makes the image circular */
-    width: 100px; /* Set a fixed width */
-    height: 100px; /* Set a fixed height to make it a circle */
+    width: 300px; /* Set width and height to the same value */
+    height: 300px; /* Matches width for a perfect circle */
     object-fit: cover; /* Ensures the image is cropped to fit the circle */
-    margin-right: 20px; /* Adds 20px of space to the right of the image */
+    margin-right: 30px;
+    aspect-ratio: 1 / 1; /* Forces the aspect ratio to be a square */
 }
