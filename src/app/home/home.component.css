@@ -11,7 +11,7 @@
 
 .overlay-text {
   position: absolute;
-  top: 450px;
+  top: 48%;
   left: 50%;
  transform: translate(-50%, -50%); /* this repositions the text relative to itself, so if this line wasn't here the first letter would be in the middle of the screen. but since this is here, the text will be centered*/
  font-family: 'Conduit ITC', sans-serif; /* It will use Conduit ITC if available and sans-serif as a backup */
@@ -19,4 +19,14 @@
   font-weight: bold;
   text-shadow: 4px 4px 2px rgba(0, 0, 0, 0.9);
   letter-spacing: 4px;
+}
+
+.image-containergpt {
+  height: 100vh; /* Full viewport height */
+  background-image: url('/images/wallpaper1.jpg'); /* Set background image path from public folder */
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Center content vertically */
+  justify-content: center; /* Center content horizontally */
 }

@@ -1,5 +1,24 @@
 <div class="container">
-    <app-header></app-header>
-    <router-outlet></router-outlet> <!--Show the output of router here, below the header component--> <!-- Router is the Home component by default I think-->
-    <app-aboutme> </app-aboutme>
-</div>
+   <div>
+        <app-header></app-header>
+    </div>
+
+    <div>
+        <router-outlet></router-outlet> <!--Show the output of router here, below the header component--> <!-- Router is the Home component by default I think-->
+    </div>
+
+    <div>
+        <app-aboutme> </app-aboutme>
+    </div>
+    
+    <div>
+        <app-experience> </app-experience>
+    </div>
+    
+  
+<img [src]="arbiter" class="left" style="width: 290px; top: 200%; margin-left: 5%;" alt="Left Decoration">
+<img [src]="halo2" class="right" style="width: 260px; top: 200%; margin-right: 5%;" alt="Right Decoration">
+<img [src]="goldelite" class="left" style="width: 400px; top: 260%; margin-left: 0.6%;" alt="Left Decoration">
+<img [src]="noble6" class="right" style="width: 250px; top: 260%; margin-right: 5%;" alt="Right Decoration">
+</div> 
+

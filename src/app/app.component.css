@@ -1,3 +1,25 @@
 .container {
-    background-color: lightpink;
+    background-color: #1c272d;
+    flex-direction:column;
 }
+
+.left, .right {
+    position: absolute; /* Or absolute, depending on your needs */
+     /* Vertically centered */
+    transform: translateY(-50%); /* Corrects the centering */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 1; /* Keeps the images behind your content */
+  }
+
+  .left {
+    left: 0
+  }
+
+.right {
+  right: 0 /* Stick to the right edge */
+}
+  
+  .gold-elite {
+    width: 500px; /* Set the width of the image */
+  }
+  

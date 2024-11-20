@@ -1,0 +1,8 @@
+.container {
+    justify-content: left;
+    display: grid;
+    margin-left: 32em;
+    font-family: 'Conduit ITC', sans-serif;
+    font-size: 1.2em;
+    color: #dcdcdc;
+}

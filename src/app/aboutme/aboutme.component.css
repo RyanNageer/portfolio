@@ -1,19 +1,16 @@
 .container {
-    background-color: lightpink;
-    margin-top: 20px; /* Adjust as needed to control space */
+    margin-top: 0; /* Adjust as needed to control space */
 }
 
 
 .image-container {
+    margin-top: 5%;
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 40px;
-    background-color: #C0Afe2;
-    height: 100vh; /* Ensures full height for home component */
-    padding: 20px; /* Optional: Adds space around the content */
+    gap: 35px;
+    height: 40vh; /* Ensures full height for home component */
+    padding: 0px; /* Optional: Adds space around the content */
 }
-
 
 .image {
     border-radius: 50%; /* Makes the image circular */
@@ -22,4 +19,41 @@
     object-fit: cover; /* Ensures the image is cropped to fit the circle */
     margin-right: 30px;
     aspect-ratio: 1 / 1; /* Forces the aspect ratio to be a square */
+}
+
+/* Apply changes for mobile view */
+@media (max-width: 768px) { /* rule will apply when the screen width is 768 pixels or narrower */
+    .image-container {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center-align text on small screens */
+    }
+}
+
+.text {
+    width: 60%; /* Set the width to control how much horizontal space the text takes up */
+    max-width: 800px; /* Limit the maximum width of the container */
+    text-align: justify; /*Justify makes it so that its not left align, the text box is even on both sides, like in Word and Google Docs */
+    margin-top: 3%; /*adjusts the top so the text doesnts start at the very top of the image */
+    align-items:flex-start; /* starts text at the top of the image instead of the direct center */
+    font-size: 1.2vw;
+    color: #dcdcdc;
+}
+
+.title {
+    font-size: 500%;
+    margin-top: 3%;
+    display: flex; /* The element behaves like a block-level element and lays out its content according to the flexbox model.*/
+    /*I think these CSS properties below are the "flexbox model" */
+  align-items: center;
+  justify-content: center;
+  color: #dcdcdc;
+}
+
+.box {
+    font-family: 'Conduit ITC', sans-serif;
+    color: #dcdcdc;
+    background-color: rgba(0, 0, 0, 0.20);
+    width: 60%; /* Adjust this percentage for the desired width */
+  margin: 0 auto; /* Centers the box horizontally */
+  border-radius: 16px; /* Rounds the edges */
 }
