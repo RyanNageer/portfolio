@@ -31,3 +31,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 ## build a new component
 
 ng generate component component-name --standalone
+
+# When I want to update the site:
+   npm run build:github
+   npx gh-pages -d dist/portfolio/browser

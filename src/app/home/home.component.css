@@ -23,7 +23,7 @@
 
 .image-containergpt {
   height: 100vh; /* Full viewport height */
-  background-image: url("images/wallpaper1.jpg"); /* Relative path - respects base href for GitHub Pages */
+  background-image: url("../../../public/images/wallpaper1.jpg");
   color: white;
   text-align: center;
   display: flex;
